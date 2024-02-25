@@ -26,36 +26,36 @@ export default function Home() {
     return () => animation.stop();
   }, [counter]);
 
-  const useFlubber = (paths: string[] , ) => {
+  const useTransformWithFlubber = (paths: string[] , ) => {
     return useTransform(progress, [0,1,2,3,4], paths, {
       mixer: (a, b) => interpolate(a, b, { maxSegmentLength: 1000 })
     });
   }
 
-  const dontUseFlubber = (paths: string[] , ) => {
+  const useTransformWithoutFlubber = (paths: string[] , ) => {
     return useTransform(progress, [0,1,2,3,4], paths);
   }
 
   // morphing using flubber
 
-  const path1 = useFlubber(combinedGeometricShapes.paths1);
-  const path2 = useFlubber(combinedGeometricShapes.paths2);
-  const path3 = useFlubber(combinedGeometricShapes.paths3);
-  const path4 = useFlubber(combinedGeometricShapes.paths4);
-  const path5 = useFlubber(combinedGeometricShapes.paths5);
-  const path6 = useFlubber(combinedGeometricShapes.paths6);
+  const path1 = useTransformWithFlubber(combinedGeometricShapes.paths1);
+  const path2 = useTransformWithFlubber(combinedGeometricShapes.paths2);
+  const path3 = useTransformWithFlubber(combinedGeometricShapes.paths3);
+  const path4 = useTransformWithFlubber(combinedGeometricShapes.paths4);
+  const path5 = useTransformWithFlubber(combinedGeometricShapes.paths5);
+  const path6 = useTransformWithFlubber(combinedGeometricShapes.paths6);
 
   const paths = [path1,path2,path3,path4,path5,path6];
 
 
   // Morphing without flubber 
 
-  const pathx1 = dontUseFlubber(combinedGeometricShapes.paths1);
-  const pathx2 = dontUseFlubber(combinedGeometricShapes.paths2);
-  const pathx3 = dontUseFlubber(combinedGeometricShapes.paths3);
-  const pathx4 = dontUseFlubber(combinedGeometricShapes.paths4);
-  const pathx5 = dontUseFlubber(combinedGeometricShapes.paths5);
-  const pathx6 = dontUseFlubber(combinedGeometricShapes.paths6);
+  const pathx1 = useTransformWithoutFlubber(combinedGeometricShapes.paths1);
+  const pathx2 = useTransformWithoutFlubber(combinedGeometricShapes.paths2);
+  const pathx3 = useTransformWithoutFlubber(combinedGeometricShapes.paths3);
+  const pathx4 = useTransformWithoutFlubber(combinedGeometricShapes.paths4);
+  const pathx5 = useTransformWithoutFlubber(combinedGeometricShapes.paths5);
+  const pathx6 = useTransformWithoutFlubber(combinedGeometricShapes.paths6);
 
 
    const pathsX = [pathx1,pathx2,pathx3,pathx4,pathx5,pathx6];
