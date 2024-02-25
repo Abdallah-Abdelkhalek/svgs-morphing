@@ -26,13 +26,13 @@ export default function Home() {
     return () => animation.stop();
   }, [counter]);
 
-  const useTransformWithFlubber = (paths: string[] , ) => {
+  const useTransformWithFlubber = (paths: string[]) => {
     return useTransform(progress, [0,1,2,3,4], paths, {
       mixer: (a, b) => interpolate(a, b, { maxSegmentLength: 1000 })
     });
   }
 
-  const useTransformWithoutFlubber = (paths: string[] , ) => {
+  const useTransformWithoutFlubber = (paths: string[]) => {
     return useTransform(progress, [0,1,2,3,4], paths);
   }
 
