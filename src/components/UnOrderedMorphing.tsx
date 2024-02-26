@@ -64,10 +64,10 @@ const UnOrderedMorphing = () => {
   return (
 <div className="flex-row flex items-center space-around w-full my-20">
       <div className="flex flex-1 flex-col items-center justify-center ">
-        <h1 className="text-[white] text-[40px] font-bold mb-24 pr-[80px] text-center">Unordered Using Flubber</h1>
+        <h1 className="text-[white] text-[40px] font-bold mb-12 pr-[80px] text-center">Unordered Using Flubber</h1>
         <motion.svg
-          width={300}
-          height={300}
+          width={200}
+          height={200}
           viewBox="0 0 500 500"
           xmlns="http://www.w3.org/2000/svg"
           className="flex items-center justify-center"
@@ -78,11 +78,11 @@ const UnOrderedMorphing = () => {
         </motion.svg>
       </div>
       <div className="flex flex-1 flex-col items-center justify-center">
-        <h1 className="text-[white] text-[40px] font-bold mb-24 pr-[80px] text-center">Unordered Without Flubber</h1>
+        <h1 className="text-[white] text-[40px] font-bold mb-12 pr-[80px] text-center">Unordered Without Flubber</h1>
 
         <motion.svg
-          width={300}
-          height={300}
+          width={200}
+          height={200}
           viewBox="0 0 500 500"
           xmlns="http://www.w3.org/2000/svg"
         >
