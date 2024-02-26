@@ -62,8 +62,8 @@ const UnOrderedMorphing = () => {
    const pathsX = [pathx1,pathx2,pathx3,pathx4,pathx5,pathx6];
 
   return (
-<div className="flex-row flex items-center space-around w-full my-20">
-      <div className="flex flex-1 flex-col items-center justify-center ">
+<div className="flex-row flex items-center space-around w-full">
+      <div className="flex flex-1 flex-col items-center justify-center">
         <h1 className="text-[white] text-[40px] font-bold mb-12 pr-[80px] text-center">Unordered Using Flubber</h1>
         <motion.svg
           width={200}

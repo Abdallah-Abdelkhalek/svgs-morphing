@@ -62,10 +62,10 @@ export default function Home() {
    const pathsX = [pathx1,pathx2,pathx3,pathx4,pathx5,pathx6];
 
   return (
-    <main className="flex min-h-screen items-center justify-between bg-black flex-wrap flex-col">
-      <div className="flex-row flex items-center space-around w-full mt-20">
-        <div className="flex flex-1 flex-col items-center justify-center w-[100%] flex-wrap">
-          <h1 className="text-[white] text-[40px] font-bold mb-12 pr-[80px]">Using Flubber</h1>
+    <main className="flex min-h-screen items-center justify-around bg-black flex-wrap flex-col">
+      <div className="flex-row flex items-center space-around w-full">
+        <div className="flex flex-1 flex-col items-center justify-center flex-wrap">
+          <h1 className="text-[white] text-[40px] font-bold mb-10 pr-[80px]">Using Flubber</h1>
           <motion.svg
             width={200}
             height={200}
@@ -79,7 +79,7 @@ export default function Home() {
           </motion.svg>
         </div>
         <div className="flex flex-1 flex-col items-center justify-center">
-          <h1 className="text-[white] text-[40px] font-bold mb-12 pr-[80px]">Without Flubber</h1>
+          <h1 className="text-[white] text-[40px] font-bold mb-10 pr-[80px]">Without Flubber</h1>
 
           <motion.svg
             width={200}
