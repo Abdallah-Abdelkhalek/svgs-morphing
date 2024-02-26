@@ -24,7 +24,7 @@ export default function Home() {
       }
     });
     return () => animation.stop();
-  }, [counter]);
+  }, [counter,progress]);
 
   const useTransformWithFlubber = (paths: string[]) => {
     return useTransform(progress, [0,1,2,3,4], paths, {
