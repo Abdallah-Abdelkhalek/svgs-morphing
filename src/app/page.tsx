@@ -65,7 +65,7 @@ export default function Home() {
     <main className="flex min-h-screen items-center justify-around bg-black flex-wrap flex-col">
       <div className="flex-row flex items-center space-around w-full">
         <div className="flex flex-1 flex-col items-center justify-center flex-wrap">
-          <h1 className="text-[white] text-[40px] font-bold mb-10 pr-[80px]">Using Flubber</h1>
+          <h1 className="text-[white] text-[36px] font-bold mb-10 pr-[80px]">Using Flubber</h1>
           <motion.svg
             width={200}
             height={200}
@@ -79,7 +79,7 @@ export default function Home() {
           </motion.svg>
         </div>
         <div className="flex flex-1 flex-col items-center justify-center">
-          <h1 className="text-[white] text-[40px] font-bold mb-10 pr-[80px]">Without Flubber</h1>
+          <h1 className="text-[white] text-[36px] font-bold mb-10 pr-[80px]">Without Flubber</h1>
 
           <motion.svg
             width={200}
