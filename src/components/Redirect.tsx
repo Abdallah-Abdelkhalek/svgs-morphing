@@ -1,11 +1,16 @@
-import React, { FC, useEffect } from 'react';
-interface RedirectProps {
-  url: string;
-}
-const Redirect: FC<RedirectProps> = ({ url }) => {
+import React, { useEffect } from 'react';
+
+const Redirect = () => {
   useEffect(() => {
-    window.location.href = url;
+    // Get the current URL
+    const urlParams = new URLSearchParams(window.location.search);
+    // Extract the value of the 'redirect' parameter
+    const redirectParam = urlParams.get('url');
+    if (redirectParam !== null) {
+      window.location.href = redirectParam;
+    }
   }, []);
+
   return <div className="flex h-screen w-screen items-center justify-center">Loading...</div>;
 };
 
