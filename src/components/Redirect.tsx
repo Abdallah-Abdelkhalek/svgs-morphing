@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
-
-const Redirect = () => {
+import React, { FC, useEffect } from 'react';
+interface RedirectProps {
+  url: string;
+}
+const Redirect: FC<RedirectProps> = ({ url }) => {
   useEffect(() => {
-    window.location.href = 'exp://192.168.1.26:8081';
+    window.location.href = url;
   }, []);
   return <div className="flex h-screen w-screen items-center justify-center">Loading...</div>;
 };
