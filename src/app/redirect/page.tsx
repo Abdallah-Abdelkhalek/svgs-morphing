@@ -1,11 +1,8 @@
 'use client';
-import { useEffect } from 'react';
+import Redirect from '@/components/Redirect';
 
 const page = () => {
-  useEffect(() => {
-    window.location.href = 'exp://192.168.1.26:8081';
-  }, []);
-  return <div className="flex h-screen w-screen items-center justify-center">Loading...</div>;
+  return <Redirect />;
 };
 
 export default page;
